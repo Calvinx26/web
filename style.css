@@ -1,0 +1,554 @@
+:root {
+  --nourish-navy: #001F3F;
+  --bootcamp-blue: #20458E;
+  --pilates-purple: #634E99;
+  --boxjump-blue: #155EBC;
+  --wellness-gray: #D3D3D3;
+  --crimson-bloom: #AC1724;
+}
+
+/* Typography */
+body {
+  font-family: 'Calibri', Arial, sans-serif;
+  color: var(--crimson-bloom);
+  background: var(--wellness-gray);
+  margin: 0;
+  padding: 0;
+}
+
+.main-header {
+  background: var(--nourish-navy);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5%;
+}
+
+.logo-container img {
+  border-radius: 12px;
+  background: var(--wellness-gray);
+  padding: 6px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.main-nav ul {
+  display: flex;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav a,
+.login-btn {
+  color: var(--crimson-bloom);
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 0.2s;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.main-nav a:hover, .login-btn:hover {
+  background: var(--bootcamp-blue);
+  color: var(--wellness-gray);
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: var(--boxjump-blue);
+  text-align: center;
+  padding: 48px 0 32px 0;
+}
+
+.main-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  color: var(--crimson-bloom);
+  margin-bottom: 24px;
+}
+
+.banner-img {
+  width: 95%;
+  max-width: 900px;
+  border-radius: 20px;
+  margin: 0 auto;
+  box-shadow: 0 6px 36px rgba(0,0,0,0.10);
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  margin: 40px 0 22px 0;
+  color: var(--crimson-bloom);
+  text-align: center;
+}
+
+/* SUCCESS STORIES & SHOP CARDS */
+.story-cards,
+.product-cards {
+  display: flex;
+  justify-content: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 36px;
+}
+
+.story-card,
+.product-card {
+  background: var(--bootcamp-blue);
+  border-radius: 16px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+  width: 300px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.14s;
+}
+
+.story-card:hover,
+.product-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.13);
+}
+
+.story-card img,
+.product-card img {
+  border-radius: 14px;
+  width: 90%;
+  margin-bottom: 14px;
+}
+
+.story-title,
+.product-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 12px 0 8px 0;
+  color: var(--crimson-bloom);
+}
+
+.story-text,
+.product-desc {
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+.action-btn {
+  background: var(--pilates-purple);
+  color: var(--wellness-gray);
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 7px;
+  padding: 10px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.17s;
+}
+
+.action-btn:hover {
+  background: var(--boxjump-blue);
+  color: var(--crimson-bloom);
+}
+
+/* Footer */
+footer {
+  background: var(--nourish-navy);
+  color: var(--wellness-gray);
+  padding: 32px 0 20px 0;
+  text-align: center;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  margin-top: 50px;
+}
+
+.footer-social h3,
+.footer-subscribe h3 {
+  color: var(--crimson-bloom);
+  font-size: 18px;
+  font-family: 'Arial', sans-serif;
+  margin-bottom: 6px;
+}
+
+.footer-social a {
+  color: var(--crimson-bloom);
+  font-size: 15px;
+  margin: 0 7px;
+  text-decoration: none;
+  transition: color 0.19s;
+}
+
+.footer-social a:hover {
+  color: var(--boxjump-blue);
+}
+
+.footer-subscribe input[type="email"] {
+  border: 1px solid var(--pilates-purple);
+  border-radius: 6px;
+  padding: 7px 12px;
+  font-size: 16px;
+  margin-bottom: 6px;
+  font-family: 'Calibri', Arial, sans-serif;
+  outline: none;
+}
+
+.subscribe-btn {
+  background: var(--pilates-purple);
+  color: var(--wellness-gray);
+  border: none;
+  border-radius: 7px;
+  padding: 9px 22px;
+  font-weight: bold;
+  font-family: 'Calibri', Arial, sans-serif;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background 0.17s;
+}
+
+.subscribe-btn:hover {
+  background: var(--boxjump-blue);
+  color: var(--crimson-bloom);
+}
+
+/* Small text */
+footer small {
+  color: var(--wellness-gray);
+  font-size: 13px;
+  display: block;
+  margin-top: 24px;
+  font-family: 'Calibri', Arial, sans-serif;
+}
+
+footer a {
+  color: var(--crimson-bloom);
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 950px) {
+  .story-cards, .product-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  .main-header {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .main-header {
+    flex-direction: column;
+    gap: 14px;
+    padding: 12px 2%;
+  }
+  .banner-img {
+    width: 98%;
+  }
+  .story-card, .product-card {
+    width: 97vw;
+    max-width: 360px;
+  }
+  footer {
+    font-size: 15px;
+    padding: 18px 0 8px 0;
+  }
+}
+.gallery-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 32px;
+  margin-bottom: 48px;
+}
+.gallery-card {
+  background: var(--bootcamp-blue);
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.07);
+  width: 320px;
+  padding: 22px 16px 20px 16px;
+  text-align: center;
+  transition: transform 0.13s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.gallery-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 12px 36px rgba(0,0,0,0.13);
+}
+.gallery-img {
+  border-radius: 14px;
+  width: 90%;
+  margin-bottom: 13px;
+}
+.about-hero-section {
+  background: var(--boxjump-blue);
+  text-align: center;
+  border-radius: 16px;
+  margin-bottom: 38px;
+  padding: 36px 0 32px 0;
+}
+.about-hero-img {
+  width: 90%;
+  max-width: 700px;
+  border-radius: 16px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+}
+.about-description {
+  font-size: 18px;
+  font-family: 'Calibri', Arial, sans-serif;
+  color: var(--crimson-bloom);
+  margin: 18px auto 0 auto;
+  max-width: 760px;
+}
+
+.opening-times-section {
+  background: var(--bootcamp-blue);
+  padding: 34px 0 18px 0;
+  border-radius: 16px;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.business-hours-table {
+  margin: 0 auto;
+  width: 85%;
+  border-collapse: collapse;
+  background: var(--wellness-gray);
+  border-radius: 8px;
+  overflow: hidden;
+  font-family: 'Calibri', Arial, sans-serif;
+}
+.business-hours-table th,
+.business-hours-table td {
+  border: 1px solid var(--pilates-purple);
+  padding: 13px 16px;
+  color: var(--crimson-bloom);
+  font-size: 16px;
+}
+.business-hours-table th {
+  background: var(--pilates-purple);
+  color: var(--wellness-gray);
+  font-size: 17px;
+}
+
+.contact-section {
+  background: var(--nourish-navy);
+  border-radius: 16px;
+  padding: 34px 0 28px 0;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+.contact-form label {
+  text-align: left;
+  margin-bottom: 2px;
+  font-family: 'Comfortaa', Arial, sans-serif;
+  font-size: 15px;
+  color: var(--crimson-bloom);
+}
+.contact-form input,
+.contact-form textarea {
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 16px;
+  border: 1px solid var(--pilates-purple);
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 8px;
+}
+.contact-form textarea {
+  resize: vertical;
+  min-height: 68px;
+}
+.contact-form .action-btn {
+  width: 100%;
+  margin-top: 8px;
+}
+.testimonials-section {
+  background: var(--bootcamp-blue);
+  border-radius: 14px;
+  margin: 38px 0;
+  padding: 28px 0 20px 0;
+}
+.testimonials-section .section-title {
+  margin-bottom: 30px;
+}
+.testimonial-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  justify-content: center;
+}
+.testimonial-card {
+  background: var(--nourish-navy);
+  color: var(--crimson-bloom);
+  border-radius: 14px;
+  padding: 22px 20px;
+  width: 260px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 2px 20px rgba(0,0,0,0.08);
+}
+.testimonial-img {
+  border-radius: 50%;
+  margin-bottom: 13px;
+  border: 2.5px solid var(--pilates-purple);
+}
+.testimonial-text {
+  font-size: 15px;
+  font-family: 'Comfortaa', Arial, sans-serif;
+  text-align: center;
+}
+
+.community-section {
+  background: var(--boxjump-blue);
+  border-radius: 14px;
+  margin: 30px 0;
+  padding: 30px 0 20px 0;
+  text-align: center;
+}
+.community-text {
+  font-size: 17px;
+  font-family: 'Calibri', Arial, sans-serif;
+  color: var(--crimson-bloom);
+}
+
+.events-section {
+  background: var(--pilates-purple);
+  border-radius: 14px;
+  margin: 30px 0;
+  padding: 32px 0 20px 0;
+  color: var(--wellness-gray);
+  text-align: center;
+}
+.events-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 420px;
+}
+.events-list li {
+  font-size: 16px;
+  font-family: 'Comfortaa', Arial, sans-serif;
+  color: var(--wellness-gray);
+  margin-bottom: 8px;
+  background: var(--bootcamp-blue);
+  border-radius: 8px;
+  padding: 10px 0;
+}
+
+.membership-section {
+  background: var(--wellness-gray);
+  border-radius: 16px;
+  margin: 34px 0 38px 0;
+  padding: 40px 0 28px 0;
+  text-align: center;
+}
+.membership-header {
+  font-family: 'Comfortaa', Arial, sans-serif;
+  font-size: 17px;
+  color: var(--crimson-bloom);
+  margin-bottom: 7px;
+}
+.membership-title {
+  font-size: 30px;
+  font-family: 'Arial', sans-serif;
+  color: var(--crimson-bloom);
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.membership-desc {
+  font-size: 16px;
+  font-family: 'Calibri', Arial, sans-serif;
+  color: var(--crimson-bloom);
+  margin-bottom: 22px;
+}
+.membership-toggle {
+  margin-bottom: 32px;
+}
+.membership-btn {
+  background: var(--pilates-purple);
+  color: var(--wellness-gray);
+  border: none;
+  border-radius: 7px;
+  padding: 10px 26px;
+  font-weight: bold;
+  margin: 0 7px;
+  cursor: pointer;
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 16px;
+  transition: background 0.15s;
+}
+.membership-btn:hover {
+  background: var(--boxjump-blue);
+  color: var(--crimson-bloom);
+}
+.membership-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 26px;
+  justify-content: center;
+  margin-top: 30px;
+}
+.membership-card {
+  background: var(--bootcamp-blue);
+  border-radius: 12px;
+  padding: 28px 14px 22px 14px;
+  width: 240px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.membership-tagline {
+  font-size: 15px;
+  font-family: 'Comfortaa', Arial, sans-serif;
+  color: var(--wellness-gray);
+  margin-bottom: 6px;
+}
+.membership-price {
+  font-size: 26px;
+  font-family: 'Arial', sans-serif;
+  color: var(--crimson-bloom);
+  margin-bottom: 13px;
+}
+.membership-features {
+  text-align: left;
+  font-family: 'Calibri', Arial, sans-serif;
+  font-size: 15px;
+  color: var(--wellness-gray);
+  margin-bottom: 18px;
+  padding-left: 0;
+  list-style: disc inside;
+}
+
+@media (max-width: 1000px) {
+  .testimonial-cards, .membership-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+  }
+  .membership-section {
+    padding: 30px 0 18px 0;
+  }
+}

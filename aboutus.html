@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ABC Fitness Studio | About Us</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-container">
+      <img src="./image/logo.png" alt="ABC Fitness Studio" height="100" width="100">
+    </div>
+    <nav class="main-nav">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="customPage.html">Custom</a></li>
+        <li><a class="login-btn" href="#">Login/Register</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="about-hero-section">
+      <img src="./image/about.jpg" alt="About ABC Fitness Studio" class="about-hero-img">
+      <h2 class="section-title">Medium length hero headline</h2>
+      <p class="about-description">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt beatae velit illum autem modi libero doloribus eum amet provident, temporibus quia, accusamus molestias!
+      </p>
+    </section>
+    <section class="opening-times-section">
+      <h2 class="section-title">Opening Time</h2>
+      <table class="business-hours-table">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Business Hours</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Monday</td><td>6 a.m. to 8 p.m.</td></tr>
+          <tr><td>Tuesday</td><td>6 a.m. to 8 p.m.</td></tr>
+          <tr><td>Wednesday</td><td>6 a.m. to 8 p.m.</td></tr>
+          <tr><td>Thursday</td><td>6 a.m. to 8 p.m.</td></tr>
+          <tr><td>Friday</td><td>6 a.m. to 8 p.m.</td></tr>
+          <tr><td>Saturday</td><td>8 a.m. to 6 p.m.</td></tr>
+          <tr><td>Sunday</td><td>Closed</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section class="contact-section">
+      <h2 class="section-title">Contact Us</h2>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Type your message here"></textarea>
+
+        <button class="action-btn" type="submit">Send Name</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <section class="footer-social">
+      <h3>Social Media</h3>
+      <a href="#">Facebook <i class="fa-brands fa-facebook"></i></a>
+      <a href="#">Twitter <i class="fa-brands fa-twitter"></i></a>
+      <a href="#">Youtube <i class="fa-brands fa-youtube"></i></a>
+      <a href="#">Instagram <i class="fa-brands fa-square-instagram"></i></a>
+    </section>
+    <section class="footer-subscribe">
+      <h3>Subscribe</h3>
+      <p>Simply enter your email below:</p>
+      <input type="email" placeholder="Email Address">
+      <button class="subscribe-btn">Subscribe</button>
+      <p>By subscribing, you agree to receive emails from us and acknowledge our Privacy Policy.</p>
+    </section>
+    <small>© 2024 Your Website. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></small>
+  </footer>
+</body>
+<script src="script.js"></script>
+<script src="aboutus-form.js"></script>
+</html>
